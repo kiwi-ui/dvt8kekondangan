@@ -1,0 +1,61 @@
+:root {
+  --primary-color: oklch(68.987% 0.09643 85.908);
+  --secondary-color: #92b07d;
+  --background-color: #f5f5f5;
+  --text-color: #92b07d;
+}
+.philosopher {
+  font-family: "Philosopher", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cormorantInfant {
+  font-family: "Cormorant Infant", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.lora {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.monsieur{
+  font-family: "Monsieur La Doulaise", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.primaryText {
+  color: var(--primary-color);
+}
+.border-prime {
+  border-color: var(--primary-color);
+}
+
+.secondaryText {
+  color: var(--secondary-color);
+}
+.iconColor {
+  color: var(--primary-color);
+}
+.buttonPrimary {
+  background-color:#92b07d;
+  border: none;
+  cursor: pointer;
+}
+
+.bgSurah{
+    background-image: url("./assets/jadi.png");
+    /* background-size:; */
+    background-position: left;
+    background-repeat: no-repeat;  
+}
+
+.bgCouple{
+    background-image: url("./assets/cover.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+}
