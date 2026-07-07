@@ -8,7 +8,7 @@ const Schedule = () => {
                 <p className="col-6 mb-4 fs-1 mt-2 fst-italic cormorantInfant fw-bold secondaryText" style={{ textAlign: 'start' }}>Wedding Events</p>
                 <div className="col-6 d-flex flex-column">
                     <span className="text-center m-0 h-50"></span>
-                    <p className="text-center border-3 border-top border-2 border-prime mt-4 p-0 h-50 w-100"></p>
+                    <p className="text-center border-3 border-top border-1 border-prime mt-4 p-0 h-50 w-100"></p>
                 </div>
             </div>
 

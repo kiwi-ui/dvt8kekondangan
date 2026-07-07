@@ -31,7 +31,7 @@
   color: var(--primary-color);
 }
 .border-prime {
-  border-color: var(--primary-color);
+  border-color: rgb(116, 142, 94) !important;
 }
 
 .secondaryText {
