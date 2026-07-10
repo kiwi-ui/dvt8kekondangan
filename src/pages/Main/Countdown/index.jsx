@@ -41,28 +41,28 @@ const Countdown = () => {
 
                 <div className="justify-content-start">
                     {!isEventOver ?
-                        <div className="row">
+                        <div className="row text-white">
                             <div className="col-3" data-aos="zoom-in-left" data-aos-delay="800" data-aos-duration="2600">
-                                <div className={`analogue text-center d-flex align-items-center flex-column rounded-2 shadow-sm`}>
-                                    <p className={` fs-5 pt-1 mb-0`}>{event.days}</p>
+                                <div className={`philoshoper text-center d-flex align-items-center flex-column rounded-2 shadow-sm buttonPrimary`}>
+                                    <p className={` fs-5 pt-1 fw-semibold mb-0`}>{event.days}</p>
                                     <p className={`m-0 pb-1`} style={{fontSize:'0.7rem'}}>Hari</p>
                                 </div>
                             </div>
                             <div className="col-3" data-aos="zoom-in-left" data-aos-delay="500" data-aos-duration="3000">
-                                <div className={`analogue text-center d-flex align-items-center flex-column rounded-2 shadow-sm`}>
-                                    <p className={` fs-5 pt-1 mb-0`}>{event.hours}</p>
+                                <div className={`philoshoper text-center d-flex align-items-center flex-column rounded-2 shadow-sm buttonPrimary`}>
+                                    <p className={` fs-5 pt-1 fw-semibold mb-0`}>{event.hours}</p>
                                     <p className={`m-0 pb-1`} style={{fontSize:'0.7rem'}}>Jam</p>
                                 </div>
                             </div>
                             <div className="col-3" data-aos="zoom-in-right" data-aos-delay="500" data-aos-duration="3000">
-                                <div className={`analogue text-center d-flex align-items-center flex-column rounded-2 shadow-sm`}>
-                                    <p className={` fs-5 pt-1 mb-0`}>{event.minutes}</p>
+                                <div className={`philoshoper text-center d-flex align-items-center flex-column rounded-2 shadow-sm buttonPrimary`}>
+                                    <p className={` fs-5 pt-1 fw-semibold mb-0`}>{event.minutes}</p>
                                     <p className={`m-0 pb-1`} style={{fontSize:'0.7rem'}}>Menit</p>
                                 </div>
                             </div>
                             <div className="col-3" data-aos="zoom-in-right" data-aos-delay="800" data-aos-duration="2600">
-                                <div className={`analogue text-center d-flex align-items-center flex-column rounded-2 shadow-sm`}>
-                                    <p className={` fs-5 pt-1 mb-0`}>{event.seconds}</p>
+                                <div className={`philoshoper text-center d-flex align-items-center flex-column rounded-2 shadow-sm buttonPrimary`}>
+                                    <p className={` fs-5 pt-1 fw-semibold mb-0`}>{event.seconds}</p>
                                     <p className={`m-0 pb-1`} style={{fontSize:'0.7rem'}}>Detik</p>
                                 </div>
                             </div>

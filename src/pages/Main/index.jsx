@@ -5,6 +5,7 @@ import Surah from './Surah';
 import Couple from './Couple';
 import Schedule from './Schedule';
 import Countdown from './Countdown';
+import Gift from './Gift';
 
 const Main = () => {
   return (
@@ -14,6 +15,7 @@ const Main = () => {
         <Couple />
         <Schedule />
         <Countdown />
+        <Gift />
     </div>
   )
 }
