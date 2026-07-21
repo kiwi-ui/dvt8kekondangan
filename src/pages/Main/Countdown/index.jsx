@@ -32,7 +32,7 @@ const Countdown = () => {
         <section id="date" className="border-0 position-relative bgCouple">
             <div className="rounded-4 mx-4 p-4" style={{ backgroundColor: 'rgba(255, 255, 255, 0.8)' }}>
                 <div className="row">
-                    <p className="col-6 mb-4 fs-1 mt-2 fst-italic cormorantInfant fw-bold secondaryText" style={{ textAlign: 'start' }}>Wedding Events</p>
+                    <p className="col-6 mb-4 fs-1 mt-2 fst-italic cormorantInfant fw-bold secondaryText" style={{ textAlign: 'start' }}>Hitung Mundur</p>
                     <div className="col-6 d-flex flex-column">
                         <span className="text-center m-0 h-50"></span>
                         <p className="text-center border-3 border-top border-1 border-prime mt-4 p-0 h-50 w-100"></p>

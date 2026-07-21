@@ -11,9 +11,9 @@ const Gift = () => {
         <div className="mx-4 p-4 rounded-4" style={{ backgroundColor: 'rgba(255, 255, 255, 0.8)' }}>
             <div className={`bgGallery text-center container rounded-4 p-4 mx-auto`} style={{ backgroundSize: '130%' }}>
                 <div>
-                    <p className="vidaloka fs-1" data-aos="zoom-in-up" data-aos-duration="3000">Wedding Gift</p>
+                    <p className="vidaloka fs-1 fst-italic cormorantInfant fw-bold secondaryText" data-aos="zoom-in-up" data-aos-duration="3000">Wedding Gift</p>
                     <p className="caudex" data-aos="zoom-in-down" data-aos-duration="3000">Doa restu Anda merupakan karunia yang sangat berarti bagi kami, dan jika memberi adalah ungkapan tanda kasih, Anda dapat memberi kado secara cashless.</p>
-                    <button className=" text-white bgButtonPrime rounded-pill px-4 d-flex justify-content-center align-items-center mx-auto" onClick={handleShowBar} data-aos="zoom-in" data-aos-duration="3000" data-aos-delay="500">
+                    <button className="buttonPrimary text-white btn"  onClick={handleShowBar} data-aos="zoom-in" data-aos-duration="3000" data-aos-delay="500">
                         <span>Klik Disini</span>
                     </button>
                 </div>
@@ -22,7 +22,7 @@ const Gift = () => {
                     <div>
                         {
                             cards.map((card, index) => (
-                                <div key={index} className="text-center my-4 cards px-3 py-4 rounded-4" data-aos="zoom-in" data-aos-duration="2500" data-aos-delay={index * 200}>
+                                <div key={index} className="text-center my-4 cards px-3 py-4 rounded-4 shadow-lg" style={{ backgroundColor: 'rgba(197, 186, 186, 0.6)' }} data-aos="zoom-in" data-aos-duration="2500" data-aos-delay={index * 200}>
                                     <div className="d-flex justify-content-end">    
                                         <img className="w-25" src={card.img} alt="" />
                                     </div>
@@ -31,8 +31,8 @@ const Gift = () => {
                                         <p  className="mb-0">{card.owner}</p>
                                         <p>{card.number}</p>
                                     </div>
-                                    <button role="button" className="d-flex flex-row gap-1 justify-content-center btn border border-2 w-50 ms-auto shadow bgButton">
-                                        copy
+                                    <button className="text-white rounded-2 px-2 border-0  bg-secondary d-flex flex-row justify-content-center align-items-center gap-2" type="button" onClick={() => {navigator.clipboard.writeText(card.number)}}>
+                                        <p className="mb-1">copy</p>
                                     </button>
                                 </div>
                             ))

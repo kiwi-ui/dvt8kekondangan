@@ -37,6 +37,9 @@
 .secondaryText {
   color: var(--secondary-color);
 }
+.bgSecondary {
+  background-color: var(--secondary-color);
+}
 .iconColor {
   color: var(--primary-color);
 }

@@ -6,16 +6,22 @@ import Couple from './Couple';
 import Schedule from './Schedule';
 import Countdown from './Countdown';
 import Gift from './Gift';
+import Wishes from './Wishes';
+import Closing from '../Closing';
+import Credits from '../Credits';
 
 const Main = () => {
   return (
     <div className={`position-relative text-center ${style.coverBg}`} style={{ height: '100dvh' }}>    
-        <Opening />
-        <Surah />
-        <Couple />
-        <Schedule />
-        <Countdown />
-        <Gift />
+      <Opening />
+      <Surah />
+      <Couple />
+      <Schedule />
+      <Countdown />
+      <Gift />
+      <Wishes />
+      <Closing />
+      <Credits />
     </div>
   )
 }
