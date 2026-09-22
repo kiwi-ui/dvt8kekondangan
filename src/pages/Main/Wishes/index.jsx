@@ -42,13 +42,8 @@ export default function Wishes() {
 
   return (
     <>
-      <div style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)', zIndex: 1040 }}
-      ></div>
-
-      <div className="" tabIndex="-1">
-        <div className="bgCouple position-relative">
-          <div className="mx-4 p-4 rounded-4" style={{ backgroundColor: 'rgba(255, 255, 255, 0.8)' }}>
-            <div className="p-4 text-center">
+        <section className="bgCouple position-relative" id="wishes">
+          <div className="p-4 rounded-4 sectionContainer mx-4" style={{ backgroundColor: 'rgba(255, 255, 255, 0.8)' }}>
               <div className="row">
                 <p className="col-6 mb-4 fs-1 mt-2 fst-italic cormorantInfant fw-bold secondaryText" style={{ textAlign: 'start' }}>Wishes</p>
                 <div className="col-6 d-flex flex-column">
@@ -86,17 +81,14 @@ export default function Wishes() {
 
                 <button 
                   type="submit" 
-                  className="buttonPrimary text-white btn d-flex align-align-items-end justify-content-center w-100 shadow"
+                  className="buttonPrimary btn text-white btn d-flex align-align-items-end justify-content-center w-100 shadow"
                   disabled={loading}
                 >
                   {loading ? 'Mengirim...' : 'Kirim'}
                 </button>
               </form>
-            </div>
-            
-          </div>
-        </div>
-      </div>
+            </div>            
+        </section>
     </>
   );
 }

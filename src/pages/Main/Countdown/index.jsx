@@ -28,10 +28,8 @@ const Countdown = () => {
     }, [])
 
     return (
-        <section id="date" className="border-0 position-relative bgCouple d-flex justify-content-center">
-
-
-            <div className="rounded-4 p-5" style={{ backgroundColor: 'rgba(255, 255, 255, 0.8)' }}>
+        <section id="date" className="border-0 bgCouple">
+            <div className="rounded-4 p-5 sectionContainer mx-4 position-relative" style={{ backgroundColor: 'rgba(255, 255, 255, 0.8)' }}>
                 <div className="row">
                     <p className="col-6 mb-4 fs-1 fst-italic cormorantInfant fw-bold secondaryText" style={{ textAlign: 'start' }}>Hitung Mundur</p>
                     <div className="col-6 d-flex flex-column">
@@ -78,4 +76,3 @@ const Countdown = () => {
 }
 
 export default Countdown
-

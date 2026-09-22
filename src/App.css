@@ -48,6 +48,10 @@
   border: none;
   cursor: pointer;
 }
+.buttonPrimary:hover {
+  background-color: #92b07d;
+  color: #fff;
+}
 
 .bgSurah{
     background-image: url("./assets/jadi.png");
@@ -71,7 +75,8 @@
 }
 @media screen and (min-width: 900px)  {
     .sectionContainer{
-        width: 50% !important;
+        max-width: 50%  !important;
+        margin: auto !important;
     }
 }
 

@@ -6,6 +6,7 @@ import Main from "./pages/Main";
 import { useParams } from "react-router-dom";
 import Aos from "aos";
 import { useAudioRefService } from "./utils/audioRefService";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -23,10 +24,9 @@ function App() {
     Aos.refresh();
   }, []);
   
-  const [isPhotoClicked, setisPhotoClicked] = useState()
-  const [clickedPhoto, setClickedPhoto] = useState('')
   return (
     <>
+    <Toaster position="top-center" reverseOrder={false} />
       {
         !openMainPage ? 
         <>
