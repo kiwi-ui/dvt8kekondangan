@@ -2,6 +2,7 @@ import React from 'react';
 import groom from '../../../assets/5.png';
 import bride from '../../../assets/6.png';
 import { CgInstagram } from 'react-icons/cg';
+import '../../../App.css';
 
 const Couple = () => {
   return (
@@ -14,7 +15,7 @@ const Couple = () => {
 
                 <div className="d-flex flex-column justify-content-center align-items-center py-4">
                     <div className="bride pb-4">
-                        <img className='w-75' src={bride} alt="bride"   data-aos="zoom-in" data-aos-duration="3000"/>
+                        <img className='imgCouple' src={bride} alt="bride"   data-aos="zoom-in" data-aos-duration="3000"/>
                         
                         <div>
                             {/* <p className="bohemeFloral mb-0 fw-semibold ps-5 pb-3 textPrime" style={{ fontSize: '2.6rem', marginTop: '-1.5rem' }}>Anom</p> */}
@@ -36,7 +37,7 @@ const Couple = () => {
                     </div> */}
 
                     <div className="groom">
-                        <img className='w-75' src={groom} alt="bride" style={{ borderRadius: '0.6rem 0.6rem 4rem 0.6rem ' }} data-aos="zoom-in" data-aos-duration="2000"/>
+                        <img className="imgCouple" src={groom} alt="bride" style={{ borderRadius: '0.6rem 0.6rem 4rem 0.6rem ' }} data-aos="zoom-in" data-aos-duration="2000"/>
                         <div>
                             {/* <p className="bohemeFloral mb-0 fw-semibold pe-5 pb-3 textPrime" style={{ fontSize: '2.6rem', marginTop: '-1.5rem' }}>Anom</p> */}
                             <p className="fraunces mb-0 secondaryText fw-bold py-3 cormorantInfant" style={{ lineHeight: '1', fontSize: '2.3rem' }}>Anomnim A ininimnin</p>

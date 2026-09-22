@@ -5,10 +5,8 @@ import style from  './style.module.css';
 const Cover = ({ setOpenMainPage, name }) => {
   const handleOpenMainPage = (e) => {
     e.preventDefault();
-    // setIsPlaying(true);
     setTimeout(() => {
       setOpenMainPage(true);
-      // setScrollBehavior(true);
       document.documentElement.requestFullscreen()
     }, 1500)
   }; 

@@ -51,14 +51,27 @@
 
 .bgSurah{
     background-image: url("./assets/jadi.png");
-    /* background-size:; */
+    background-size: cover;
     background-position: left;
     background-repeat: no-repeat;  
 }
-
 .bgCouple{
     background-image: url("./assets/cover.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;  
 }
+.imgCouple{
+    width: 75% ;
+}
+@media screen and (min-width: 900px)  {
+    .imgCouple{
+        width: 40% !important;
+    }
+}
+@media screen and (min-width: 900px)  {
+    .sectionContainer{
+        width: 50% !important;
+    }
+}
+

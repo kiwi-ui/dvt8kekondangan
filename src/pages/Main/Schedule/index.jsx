@@ -2,8 +2,8 @@ import { BsInstagram } from "react-icons/bs"
 
 const Schedule = () => {
   return (
-    <section style={{ zIndex: 5, position: 'relative' }} className='py-4 bgCouple' id='couple'>
-        <div className="rounded-4 m-4 p-4" style={{ backgroundColor: 'rgba(255, 255, 255, 0.8)' }}>
+    <section style={{ zIndex: 5, position: 'relative' }} className='py-4 bgCouple d-flex justify-content-center' id='couple'>
+        <div className="rounded-4 m-4 p-4 sectionContainer" style={{ backgroundColor: 'rgba(255, 255, 255, 0.8)' }}>
             <div className="row">
                 <p className="col-6 mb-4 fs-1 mt-2 fst-italic cormorantInfant fw-bold secondaryText" style={{ textAlign: 'start' }}>Wedding Events</p>
                 <div className="col-6 d-flex flex-column">

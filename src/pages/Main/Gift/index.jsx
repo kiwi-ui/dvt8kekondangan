@@ -7,9 +7,9 @@ const Gift = () => {
     setShowBar(!showBar);
   }
   return (
-    <section className="bgCouple position-relative py-5" id="gift">
-        <div className="mx-4 p-4 rounded-4" style={{ backgroundColor: 'rgba(255, 255, 255, 0.8)' }}>
-            <div className={`bgGallery text-center container rounded-4 p-4 mx-auto`} style={{ backgroundSize: '130%' }}>
+    <section className="bgCouple position-relative py-5 d-flex justify-content-center" id="gift">
+        <div className="mx-4 p-4 rounded-4 sectionContainer" style={{ backgroundColor: 'rgba(255, 255, 255, 0.8)' }}>
+            <div className={`bgGallery text-center container rounded-4 mx-auto`} style={{ backgroundSize: '130%' }}>
                 <div>
                     <p className="vidaloka fs-1 fst-italic cormorantInfant fw-bold secondaryText" data-aos="zoom-in-up" data-aos-duration="3000">Wedding Gift</p>
                     <p className="caudex" data-aos="zoom-in-down" data-aos-duration="3000">Doa restu Anda merupakan karunia yang sangat berarti bagi kami, dan jika memberi adalah ungkapan tanda kasih, Anda dapat memberi kado secara cashless.</p>

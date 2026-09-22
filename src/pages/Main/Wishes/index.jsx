@@ -29,7 +29,7 @@ export default function Wishes() {
       });
 
       if (!res.ok) throw new Error("Gagal kirim ke Google Sheet");
-
+      setLoading(true);
       setName("");
       setWish("");
       toast.success("Data berhasil dikirim!");
@@ -42,15 +42,10 @@ export default function Wishes() {
 
   return (
     <>
-      <div 
-        className="" 
-        style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)', zIndex: 1040 }}
+      <div style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)', zIndex: 1040 }}
       ></div>
 
-      <div 
-        className="" 
-        tabIndex="-1" 
-      >
+      <div className="" tabIndex="-1">
         <div className="bgCouple position-relative">
           <div className="mx-4 p-4 rounded-4" style={{ backgroundColor: 'rgba(255, 255, 255, 0.8)' }}>
             <div className="p-4 text-center">
