@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { webapp } from '../../../utils/spreadsheet';
 import toast from 'react-hot-toast';
+import Loading from '../../../components/Loading';
 
 export default function Wishes() {
   const [name, setName] = useState("");
@@ -28,11 +29,11 @@ export default function Wishes() {
         body: CompleteformData,
       });
 
-      if (!res.ok) throw new Error("Gagal kirim ke Google Sheet");
+      if (!res.ok) throw new Error("Gagal mengirim harapan. Silakan coba lagi.");
       setLoading(true);
       setName("");
       setWish("");
-      toast.success("Data berhasil dikirim!");
+      toast.success("Harapan berhasil dikirim!");
     } catch (error) {
       toast.error(error.message);
     } finally {
@@ -84,7 +85,7 @@ export default function Wishes() {
                   className="buttonPrimary btn text-white btn d-flex align-align-items-end justify-content-center w-100 shadow"
                   disabled={loading}
                 >
-                  {loading ? 'Mengirim...' : 'Kirim'}
+                  {loading ? <Loading /> : 'Kirim'}
                 </button>
               </form>
             </div>            

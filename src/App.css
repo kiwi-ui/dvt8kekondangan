@@ -52,6 +52,10 @@
   background-color: #92b07d;
   color: #fff;
 }
+.buttonPrimary:disabled {
+  background-color: #8cb073;
+  color: #fff;
+}
 
 .bgSurah{
     background-image: url("./assets/jadi.png");
