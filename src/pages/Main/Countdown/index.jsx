@@ -31,8 +31,8 @@ const Countdown = () => {
         <section id="date" className="border-0 bgCouple">
             <div className="rounded-4 p-5 sectionContainer mx-4 position-relative" style={{ backgroundColor: 'rgba(255, 255, 255, 0.8)' }}>
                 <div className="row">
-                    <p className="col-6 mb-4 fs-1 fst-italic cormorantInfant fw-bold secondaryText" style={{ textAlign: 'start' }}>Hitung Mundur</p>
-                    <div className="col-6 d-flex flex-column">
+                    <p className="col-6 mb-4 fs-1 fst-italic cormorantInfant fw-bold secondaryText" style={{ textAlign: 'start' }} data-aos="zoom-in" data-aos-duration="3000">Hitung Mundur</p>
+                    <div className="col-6 d-flex flex-column" data-aos="fade-left" data-aos-duration="2900">
                         <span className="text-center m-0 h-50"></span>
                         <p className="text-center border-3 border-top border-1 border-prime mt-4 p-0 h-50 w-100"></p>
                     </div>
@@ -42,7 +42,7 @@ const Countdown = () => {
                     {!isEventOver ?
                         <div className="row text-white">
                             <div className="col-3" data-aos="zoom-in-left" data-aos-delay="800" data-aos-duration="2600">
-                                <div className={`philoshoper text-center d-flex align-items-center flex-column rounded-2 shadow-sm buttonPrimary`}>
+                                <div className={`philoshoper text-center d-flex align-items-center flex-column rounded-2 shadow-sm buttonPrimary`} >
                                     <p className={` fs-5 pt-1 px-3 fw-semibold mb-0`}>{event.days}</p>
                                     <p className={`m-0 pb-1`} style={{fontSize:'0.7rem'}}>Hari</p>
                                 </div>

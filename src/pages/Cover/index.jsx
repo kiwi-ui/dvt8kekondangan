@@ -18,23 +18,29 @@ const Cover = ({ setOpenMainPage, name }) => {
         <img src={cornerBottom} className="position-absolute bottom-0 start-0 rotate" style={{width: '8rem'}} alt="initial"  data-aos="fade-up" data-aos-duration="3000" />
         
         <div style={{ zIndex: 2 }} >
-          <p className="cormorantGaramond mb-0 fw-semibold philosopher primaryText fs-5">The Wedding of</p>
-          <p className="cormorantInfant fw-bold m-0 secondaryText" style={{ fontSize: '2.4rem' }}>
+          <p className="cormorantGaramond mb-0 fw-semibold philosopher primaryText fs-5" data-aos="fade-down" data-aos-duration="2000">The Wedding of</p>
+          <p className="cormorantInfant fw-bold m-0 secondaryText" style={{ fontSize: '2.4rem' }} data-aos="fade-right" data-aos-duration="2950">
             Anonim & Anonim
           </p>
-          <p className="philosopher m-0 primaryText fw-semibold">Sabtu, 31 Februari 2026</p>
+          <p className="philosopher m-0 primaryText fw-semibold" data-aos="fade-down" data-aos-duration="3000" data-aos-delay="500">
+            Sabtu, 31 Februari 2026
+          </p>
         </div>
 
         <div className={`px-5 mt-5 rounded-3 andada`} style={{ zIndex: 2 }}>
           <div className="">
-            <p className="mb-0 primaryText fw-semibold">Kepada yang terhormat</p>
-            <p className="mb-0 primaryText fw-semibold">Bapak/Ibu/Saudara/i</p>
+            <p className="mb-0 primaryText fw-semibold" data-aos="fade-up" data-aos-duration="3000">Kepada yang terhormat</p>
+            <p className="mb-0 primaryText fw-semibold" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="500">
+              Bapak/Ibu/Saudara/i
+            </p>
             {/* <p className="my-1 mb-0 mt-1 fs-4 py-4">{name}</p> */}
-            <p className="cormorantInfant mb-0 fs-5 py-3 fw-bold secondaryText">{ name }</p>
+            <p className="cormorantInfant mb-0 fs-5 py-3 fw-bold secondaryText" data-aos="zoom-in-up  " data-aos-duration="3000" data-aos-delay="1000">
+              { name }
+            </p>
           </div>
         </div>
         
-        <button className="shadow-lg buttonPrimary border-0 rounded-2 d-flex flex-row align-items-center gap-2 text-black cormorantG py-2 px-3 text-white button fw-semibold" type="button" style={{ zIndex: 2, fontSize: '0.9rem' }} data-aos="fade-up" data-aos-duration="1800" onClick={ handleOpenMainPage }>
+        <button className="shadow-lg buttonPrimary border-0 rounded-2 d-flex flex-row align-items-center gap-2 text-black cormorantG py-2 px-3 text-white button fw-semibold" type="button" style={{ zIndex: 2, fontSize: '0.9rem' }} data-aos="zoom-in" data-aos-duration="1800" onClick={ handleOpenMainPage }>
           {/* {isPlaying ? <CiUnlock className='fw-bold'/> : <CiLock className='fw-bold'/>} <p className="mb-0">Buka Undangan</p> */} Buka Undangan
         </button>
       </div>

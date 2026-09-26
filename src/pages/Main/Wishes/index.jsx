@@ -46,15 +46,15 @@ export default function Wishes() {
         <section className="bgCouple position-relative" id="wishes">
           <div className="p-4 rounded-4 sectionContainer mx-4" style={{ backgroundColor: 'rgba(255, 255, 255, 0.8)' }}>
               <div className="row">
-                <p className="col-6 mb-4 fs-1 mt-2 fst-italic cormorantInfant fw-bold secondaryText" style={{ textAlign: 'start' }}>Wishes</p>
-                <div className="col-6 d-flex flex-column">
+                <p className="col-6 mb-4 fs-1 mt-2 fst-italic cormorantInfant fw-bold secondaryText" style={{ textAlign: 'start' }} data-aos="fade-down" data-aos-duration="3000">Wishes</p>
+                <div className="col-6 d-flex flex-column" data-aos="fade-left" data-aos-duration="2900">
                     <span className="text-center m-0 h-50"></span>
                     <p className="text-center border-3 border-top border-1 border-prime mt-4 p-0 h-50 w-100"></p>
                 </div>
               </div>  
 
               <form name="dvt8" id='form' className="text-start" onSubmit={sendWish}>
-                <div className="form-floating mb-3">
+                <div className="form-floating mb-3" data-aos="fade-left" data-aos-duration="3000">
                   <input 
                     type="text"
                     className="form-control shadow"
@@ -67,7 +67,7 @@ export default function Wishes() {
                   <label className="text-muted">Nama</label>
                 </div>
                 
-                <div className="form-floating mb-4">
+                <div className="form-floating mb-4" data-aos="fade-right" data-aos-duration="3000">
                   <input 
                     type="text"
                     className="form-control shadow"
@@ -84,6 +84,9 @@ export default function Wishes() {
                   type="submit" 
                   className="buttonPrimary btn text-white btn d-flex align-align-items-end justify-content-center w-100 shadow"
                   disabled={loading}
+                  data-aos="fade-up"
+                  data-aos-duration="3000"
+                  data-aos-delay="500"
                 >
                   {loading ? <Loading /> : 'Kirim'}
                 </button>

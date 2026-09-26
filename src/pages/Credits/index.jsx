@@ -5,12 +5,12 @@ const Credits = () => {
   return (
     <section className='py-4 bgSecondary h-25 d-flex justify-content-center align-items-center' id='credits'>
       <div className="d-flex flex-column align-items-center sectionContainer">
-        <p className="philosopher text-white fw-semibold">Designed and Developed by: divition</p>
+        <p className="philosopher text-white fw-semibold" data-aos="fade-up" data-aos-duration="3000">Designed and Developed by: divition</p>
         <div className="logos d-flex gap-3 mt-2">
-            <a href="https://wa.link/0gd2cu" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.link/0gd2cu" target="_blank" rel="noopener noreferrer" data-aos="fade-left" data-aos-duration="3000">
               <IoLogoWhatsapp size={30} color="white" />
             </a>
-            <a href="https://www.instagram.com/divit.ion/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/divit.ion/" target="_blank" rel="noopener noreferrer" data-aos="fade-right" data-aos-duration="3000">
                 <RiInstagramFill size={30} color="white" />
             </a>
         </div>

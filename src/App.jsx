@@ -7,6 +7,7 @@ import { useParams } from "react-router-dom";
 import Aos from "aos";
 import { useAudioRefService } from "./utils/audioRefService";
 import { Toaster } from "react-hot-toast";
+import "aos/dist/aos.css";
 
 function App() {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -17,8 +18,7 @@ function App() {
   const audioRef = useAudioRefService();
     useEffect(() => {
       Aos.init({
-        once: false,   
-        mirror: false,
+        once: true,   
       });
 
     Aos.refresh();
