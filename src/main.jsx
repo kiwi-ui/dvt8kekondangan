@@ -8,7 +8,7 @@ import App from './App'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Suspense fallback={<div>Loading...</div>}>
-      <BrowserRouter>
+      <BrowserRouter basename="/dvt8">
         <Routes>
           <Route path="/:name" element={<App />} />
         </Routes>
